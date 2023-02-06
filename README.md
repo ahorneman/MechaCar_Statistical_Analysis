@@ -18,51 +18,44 @@ Therefore, the model does predict mpg of MechaCar prototypes effectively.
 ![Capture1](https://user-images.githubusercontent.com/113067853/217106946-97180161-e163-4908-8b69-42c80ca25946.PNG)
 
 ### Summary Statistics on Suspension Coils
-The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
-Summary statistics table to show:
-- The suspension coil’s PSI continuous variable across all manufacturing lots.
-- The following PSI metrics for each lot: mean, median, variance, and standard deviation.
-
-#### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 When looking at all manufacturing lots collectively, the variance of 62.29356 meets the 100 pounds per square inch specification. 
 ##### Total Summary table:
-![image](https://user-images.githubusercontent.com/114044192/215367956-0734675a-21c3-4aff-8a54-110c87396a89.png)
+![Capture2](https://user-images.githubusercontent.com/113067853/217107120-9111cf6c-b759-46f4-88a3-1a94fb1631e6.PNG)
 
 When we go deeper and look at individual lots, Lots 1 and 2 pass the 100 pound requirement with variances of .9795918 and .4693878 respectively. 
 However, Lot 3 shows 170.2861224 variance, which far exceeds the specification. 
-##### Lot Summary Table:
+Lot Summary Table:
 ![image](https://user-images.githubusercontent.com/114044192/215367990-3e9020d1-05a6-4ffe-a159-cde231f00daa.png)
 
-
-### T-Tests on Suspension Coils
-T-tests were ran to determine if all manufacturing lots and each lot individually are statistically different from 
-the population mean of 1,500 pounds per square inch.
-
-##### T-Test for all Lots:
-![image](https://user-images.githubusercontent.com/114044192/215369025-ff555e7c-ef4c-4a3e-8289-f880a9567614.png)
+T-Test for all Lots:
+![Capture3](https://user-images.githubusercontent.com/113067853/217107220-0a88ef72-4e83-4cea-8746-47aa546baa05.PNG)
 
 The sample mean for all lots is 1498.78. 
 The p-value is 0.06 which is higher than 0.05. 
 The data supports not rejecting the null hypothesis.
 As a whole,the population meets the 1500 psi specification. 
 
-##### T-Test for Lot 1
-![image](https://user-images.githubusercontent.com/114044192/215369146-7ecc4138-b916-4945-8856-af99f3563cde.png)
+T-Test for Lot 1
+![Capture4](https://user-images.githubusercontent.com/113067853/217107276-0604ec99-6010-4c19-8867-9c10e3101179.PNG)
+
 The sample mean for Lot 1 is 1500. 
 The p-value is 1 which is higher than 0.05. 
 The data supports not rejecting the null hypothesis.
 There is no statistical difference between sample mean and population mean. 
 
-##### T-Test for Lot 2
-![image](https://user-images.githubusercontent.com/114044192/215369171-8a9940b4-9ad0-4819-90e5-e56c27590276.png)
+T-Test for Lot 2
+![Capture5](https://user-images.githubusercontent.com/113067853/217107325-6b2d4548-0cf4-46de-9d6c-86bd17a71d9c.PNG)
+
 The sample mean for Lot 2 is 1500.02. 
 The p-value is 0.61 which is higher than 0.05. 
 The data supports not rejecting the null hypothesis.
 There is no statistical difference between sample mean and population mean. 
 
-##### T-Test for Lot 3
-![image](https://user-images.githubusercontent.com/114044192/215369203-6c2a5a27-ff4e-4ca6-8ad0-ef9ca3438150.png)
+T-Test for Lot 3
+![Capture6](https://user-images.githubusercontent.com/113067853/217107363-5ceed2b9-ba71-495b-b950-2be5f3dadf5f.PNG)
+
 The sample mean for Lot 3 is 1496.14. 
 The p-value is 0.04 which is lower than 0.05. 
 The data supports rejecting the null hypothesis.
@@ -77,9 +70,6 @@ A statistical study to compare performance of the MechaCar vehicles against perf
 - A null hypothesis or an alternative hypothesis is described
 - A statistical test is described to test the hypothesis
 
-#### Proposed Study:
-We would need to collect data for MechCar and its comparable models from different manufacturers for 2 years time to determine which, if any factors correlate to customer satisfaction. 
-
 ##### Hypothesis:
  - Null Hypothesis:
    MechaCar is comparable and competitive to similar models from other manufacturers. 
@@ -91,17 +81,3 @@ Multiple Linear regession and T tests should be used to determine identified fac
 
 This would allow us to focus on the factors that highly correlate to customer satisfaction and review possible ways to improve overall
 customer satisfaction with the MechaCar.
-   
-##### Questons to consider:
-1. What are the manufacturers that produce comparable models?
-  - 1a. What manufacturers target the same market and are to be included in study?
-2. Which car(s) from identified manufacturers should be included?
-3. What data points do we want to compare across the population?
-  - 3a. Suggested comparison data include:
-     - Vehicle Cost
-     - Vehicle Weight
-     - Vehicle Engine Size
-     - Vehicle Engine Type
-     - Vehicle MPG
-     - Vehicle Safety Rating
-     - Vehicle Customer Satisfaction Rating
